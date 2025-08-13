@@ -24,16 +24,10 @@ def get_formatted_table(stock: str):
 
 with tab1:
     st.subheader("Price Action DataFrame")
-    # Placeholder data — replace with your real monthly data
-    # dummy_data = pd.DataFrame({
-    #     "Date": pd.date_range(start="2024-01-01", periods=5, freq="ME"),
-    #     "Close": [100, 105, 102, 106, 108]
-    # })
     analysis = get_formatted_table(selected_ticker)
     st.dataframe(analysis)
 
 
-# Tab 2 — Heatmap
 with tab2:
     st.subheader("Heatmap")
     fig = generate_heatmap(selected_ticker)
@@ -44,7 +38,6 @@ with tab2:
     )
     st.plotly_chart(fig, )
 
-# Tab 3 — Bar Charts
 with tab3:
     st.subheader("Bar Charts")
     fig = generate_monthly_avg_barchar(selected_ticker)
