@@ -5,3 +5,8 @@ The dashboard allows interactive exploration of:
 - Price action data (monthly closing prices, returns, and metrics)
 - Seasonal patterns and monthly performance heatmaps
 - Annual returns and contribution analysis
+
+---
+
+## Contributors
+- [Manoj Kumar Paskaran](https://github.com/Manoj-Paskaran)
