@@ -11,3 +11,4 @@ The dashboard allows interactive exploration of:
 ## Contributors
 - [Manoj Kumar Paskaran](https://github.com/Manoj-Paskaran)
 - [Pranith Mahanti](https://github.com/PranithMahanti)
+- [Dandu Asrith](https://github.com/asrith-306)
