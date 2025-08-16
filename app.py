@@ -1,5 +1,7 @@
 import streamlit as st
 
+# TODO: Instead of importing python constants, we need to get the concatanated
+#       dataframe from the load_stocks_from_data_dir function in loader.py
 from src.constants import STOCK_NAMES, STOCKS
 from src.loader import (
     format_analysis,
@@ -12,9 +14,16 @@ from src.plots import (
 
 st.set_page_config(page_title="Price Action Dashboard", layout="wide")  # make page wide
 
+
+# TODO: Add another sidebar for filtering based on sector
+
+
+# TODO: Change the below code to show stock names of selected sector only
+
 st.sidebar.title("Select Stock")
 selected_stock_name = st.sidebar.selectbox("Choose a stock:", STOCK_NAMES)
 selected_stock_ticker = STOCKS[selected_stock_name]
+
 st.title("Price Action Dashboard")
 st.write(f"### Selected Stock: **{selected_stock_name}** `({selected_stock_ticker})`")
 
